@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "stopwords"
+version = "0.1.0"
+description = ""
+authors = ["easai <aksarih@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+matplotlib-venn = "^1.1.1"
+nltk = "^3.9.1"
+spacy = "^3.8.2"
+stopwordsiso = "^0.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
