@@ -20,7 +20,11 @@ To run the script, first install dependent libraries.
 ```bash
 poetry install
 ```
+Download `en_core_web_sm` for spaCy stopwords.
+```bash
+poetry run python -m spacy download en_core_web_sm
+```
 Run the script as follows.
 ```bash
-poetry run stopwords/stopwords.py
+poetry run py .\stopwords\stopwords.py
 ```
