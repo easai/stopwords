@@ -28,3 +28,18 @@ Run the script as follows.
 ```bash
 poetry run py .\stopwords\stopwords.py
 ```
+### Results
+Click below for the results.
+```text
+sets = {
+    '100': iso_stopwords - spacy_stopwords - nltk_stopwords,
+    '010': spacy_stopwords - iso_stopwords - nltk_stopwords,
+    '001': nltk_stopwords - iso_stopwords - spacy_stopwords,
+    '110': (iso_stopwords & spacy_stopwords) - nltk_stopwords,
+    '101': (iso_stopwords & nltk_stopwords) - spacy_stopwords,
+    '011': (spacy_stopwords & nltk_stopwords) - iso_stopwords,
+    '111': iso_stopwords & spacy_stopwords & nltk_stopwords
+}
+```
+[English stopwords by ISO, spaCy, and NLTK](https://github.com/easai/stopwords/blob/main/results.txt)
+
