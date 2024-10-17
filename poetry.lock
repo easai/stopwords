@@ -936,6 +936,22 @@ files = [
 ]
 
 [[package]]
+name = "mplcursors"
+version = "0.5.3"
+description = "Interactive data selection cursors for Matplotlib."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mplcursors-0.5.3.tar.gz", hash = "sha256:cb220c8dffaafde195e138faec5654737267f7685d1f0503618cdc333aca0966"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.1,<3.7.1 || >3.7.1"
+
+[package.extras]
+docs = ["pandas", "pydata_sphinx_theme (!=0.10.1)", "sphinx", "sphinx-gallery"]
+
+[[package]]
 name = "murmurhash"
 version = "1.0.10"
 description = "Cython bindings for MurmurHash"
@@ -2040,4 +2056,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "8c9e271232d66b3e2596ee49cc8042651c6b2343af1cfa9c0fe08e59a5ece6ab"
+content-hash = "eba33c72b994d3553f5512ab7ac57022bc3255d41d190ed2ebe2a96bfddd515a"
