@@ -3,7 +3,6 @@ from matplotlib_venn import venn3
 import nltk
 import spacy
 import stopwordsiso
-import mplcursors
 
 # Get ISO English stopwords
 iso_stopwords = stopwordsiso.stopwords("en")
@@ -17,7 +16,8 @@ nltk.download('stopwords')
 nltk_stopwords = set(nltk.corpus.stopwords.words('english'))
 
 # Create a Venn diagram
-venn = venn3([iso_stopwords, spacy_stopwords, nltk_stopwords], ('ISO stopwords', 'SpaCy stopwords', 'NLTK stopwords'))
+venn = venn3([iso_stopwords, spacy_stopwords, nltk_stopwords],
+             ('ISO stopwords', 'SpaCy stopwords', 'NLTK stopwords'))
 
 # Define the sets for each section
 sets = {

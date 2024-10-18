@@ -1,0 +1,32 @@
+> poetry run py .\stopwords\nltk-stopwords.py
+[nltk_data] Downloading package reuters to
+[nltk_data]     C:\Users\easai\AppData\Roaming\nltk_data...
+[nltk_data]   Package reuters is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\easai\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\easai\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Mean:  0.6127916769823796
+Median:  0.5876288659793815
+Standard Deviation:  0.1080245729937558
+Shapiro-Wilk test statistic:  0.905384897890509
+p-value:  2.773996451055017e-48
+The compression rates are not normally distributed.
+
+> poetry run py .\stopwords\iso-stopwords.py
+Mean:  0.46848585024735256
+Median:  0.45714285714285713
+Standard Deviation:  0.09172824822316185
+Shapiro-Wilk test statistic:  0.8993187595609815
+p-value:  2.5232375570871764e-49
+The compression rates are not normally distributed.
+
+> poetry run py .\stopwords\spacy-stopwords.py
+Mean:  0.5834552313052037
+Median:  0.5585585585585585
+Standard Deviation:  0.10965667465841214
+Shapiro-Wilk test statistic:  0.9216185461552716
+p-value:  3.3622028531080556e-45
+The compression rates are not normally distributed.
