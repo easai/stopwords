@@ -97,3 +97,9 @@ sets = {
 - [English stopwords by ISO, spaCy, and NLTK](https://github.com/easai/stopwords/blob/main/results.txt)
 
 - [Stats on Reuters Texts with ISO, SpaCy, NLTK Stopwords](https://github.com/easai/stopwords/blob/main/results-stat.txt)
+
+### Test
+To run a unit test, run the following command in your terminal.
+```bash
+poetry run py -m unittest
+```
