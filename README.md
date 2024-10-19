@@ -2,7 +2,7 @@
 
 Stopwords are commonly used words in a language that are often filtered out in natural language processing (NLP) and text mining tasks. Examples of stopwords in English include “the,” “is,” “in,” “and,” “a,” and "an".
 
-This Venn diagram depicts how the stopwords provided by ISO, spaCy, and NLTK differ.
+Several Python packages such as ISO, spaCy, and NLTK provide lists of stopwords for various languages. The Venn diagram below represents the differences and overlaps between the stopwords provided by these packages.
 
 <img src="https://raw.githubusercontent.com/easai/stopwords/refs/heads/main/English_stopwords.png" width=600 alt="ISO, spaCy, and NLTK English stopwords" />
 
