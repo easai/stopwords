@@ -120,6 +120,10 @@ class StopwordsCompressionAnalyzer:
         print("Standard Deviation: ", std_dev)
 
     def perform_shapiro_wilk_test(self, compression_rates):
+        # Perform the Shapiro-Wilk test
+        return stats.shapiro(compression_rates)
+
+    def print_shapiro_wilk_test(self, compression_rates):
         """
         Performs the Shapiro-Wilk test to check the normality of the compression rates.
         
@@ -133,7 +137,7 @@ class StopwordsCompressionAnalyzer:
         None
         """
         # Perform the Shapiro-Wilk test
-        w, p = stats.shapiro(compression_rates)
+        w, p = self.perform_shapiro_wilk_test(compression_rates)
 
         # Print the results
         print("Shapiro-Wilk test statistic: ", w)
